@@ -5,9 +5,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import { stories as accordionStories } from './AccordionStories';
 import { stories as buttonStories } from './ButtonStories';
 import { stories as textInputStories } from './TextInputStories';
 import { stories as checkboxStories } from './CheckboxStories';
+import { stories as codeSnippetStories } from './CodeSnippetStories';
 import { stories as dropdownStories } from './DropdownStories';
 import { stories as toggleStories } from './ToggleStories';
 import type { ReactNode } from 'react';
@@ -28,20 +30,28 @@ export interface ComponentGroup {
  */
 export const componentRegistry: ComponentGroup[] = [
   {
-    title: 'Button',
-    stories: buttonStories,
+    title: 'Accordion',
+    stories: accordionStories,
   },
   {
-    title: 'TextInput',
-    stories: textInputStories,
+    title: 'Button',
+    stories: buttonStories,
   },
   {
     title: 'Checkbox',
     stories: checkboxStories,
   },
   {
+    title: 'CodeSnippet',
+    stories: codeSnippetStories,
+  },
+  {
     title: 'Dropdown',
     stories: dropdownStories,
+  },
+  {
+    title: 'TextInput',
+    stories: textInputStories,
   },
   {
     title: 'Toggle',
