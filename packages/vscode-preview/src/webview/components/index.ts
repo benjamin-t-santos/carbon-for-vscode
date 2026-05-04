@@ -11,6 +11,7 @@ import { stories as textInputStories } from './TextInputStories';
 import { stories as checkboxStories } from './CheckboxStories';
 import { stories as codeSnippetStories } from './CodeSnippetStories';
 import { stories as dropdownStories } from './DropdownStories';
+import { stories as radioButtonStories } from './RadioButtonStories';
 import { stories as toggleStories } from './ToggleStories';
 import type { ReactNode } from 'react';
 
@@ -51,7 +52,10 @@ export const componentRegistry: ComponentGroup[] = [
   },
   {
     title: 'TextInput',
-    stories: textInputStories,
+    stories: textInputStories
+  },
+    title: 'RadioButton',
+    stories: radioButtonStories,
   },
   {
     title: 'Toggle',
