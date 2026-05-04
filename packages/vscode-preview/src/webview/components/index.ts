@@ -52,11 +52,9 @@ export const componentRegistry: ComponentGroup[] = [
   },
   {
     title: 'TextInput',
-    stories: textInputStories
+    stories: textInputStories,
   },
-    title: 'RadioButton',
-    stories: radioButtonStories,
-  },
+  { title: 'RadioButton', stories: radioButtonStories },
   {
     title: 'Toggle',
     stories: toggleStories,
