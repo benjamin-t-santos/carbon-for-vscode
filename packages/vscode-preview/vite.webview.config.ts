@@ -20,6 +20,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: resolve(__dirname, 'src/webview/index.html'),
+      external: ['window-or-global'],
       output: {
         // Stable filenames so the extension can reference them without hashes
         entryFileNames: 'assets/index.js',
